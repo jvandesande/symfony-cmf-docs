@@ -25,6 +25,17 @@ You can install the bundle in 2 different ways:
 Usage
 -----
 
+Add the bundle to your application kernel and then enable the PHPCR
+persistance layer in your application configuration:
+
+.. code-block:: yaml
+
+    cmf_block:
+        persistence:
+            phpcr:
+                enabled: true
+                block_basepath: /cms/block
+
 The default settings of a block are defined in the block service. If you use a
 third party block, you might want to alter these for your application. Use the
 ``sonata_block`` key for this. You can define default settings for a block
